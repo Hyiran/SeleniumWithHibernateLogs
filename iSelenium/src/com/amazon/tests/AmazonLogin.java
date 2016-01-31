@@ -56,7 +56,7 @@ public class AmazonLogin {
 			Collections.sort(list2);
 			log.info(list1.equals(list2));
 			log.info(LOGS.PASS);
-			r6.setStatus("PASS");
+			r6.setStatus(Constants.PASS);
 
 			tc6.setName("verifyNavXShop");
 			tc6.setNumber(01);
@@ -70,7 +70,7 @@ public class AmazonLogin {
 		} catch (Exception e) {
 			System.out.println("Unable open the Browser =>" + e);
 			log.info(LOGS.ERROR);
-			r6.setStatus("FAIL");
+			r6.setStatus(Constants.ERROR);
 			tc6.setName("OpenBrowsere");
 			tc6.setNumber(01);
 			tc6.setSuite_id(01);
@@ -94,7 +94,7 @@ public class AmazonLogin {
 			Actions action = new Actions(driver);
 			action.moveToElement(element).build().perform();
 			log.info(LOGS.PASS);
-			r5.setStatus("PASS");
+			r5.setStatus(Constants.PASS);
 
 			tc5.setName("verifyShopByDept");
 			tc5.setNumber(01);
@@ -108,7 +108,7 @@ public class AmazonLogin {
 		} catch (Exception e) {
 			System.out.println("verifyShopByDept =>" + e);
 			log.info(LOGS.ERROR);
-			r5.setStatus("ERROR");
+			r5.setStatus(Constants.ERROR);
 			tc5.setName("verifyShopByDept");
 			tc5.setNumber(01);
 			tc5.setSuite_id(01);
@@ -132,7 +132,7 @@ public class AmazonLogin {
 				driver.findElement(By.xpath("//*[@id='nav-xshop']/a[" + i + "]")).getText();
 
 			log.info(LOGS.PASS);
-			r4.setStatus("PASS");
+			r4.setStatus(Constants.PASS);
 
 			tc4.setName("verifyMenuItem");
 			tc4.setNumber(01);
@@ -147,7 +147,7 @@ public class AmazonLogin {
 			System.out.println("verifyMenuItem =>" + e);
 
 			log.info(LOGS.ERROR);
-			r4.setStatus("FAIL");
+			r4.setStatus(Constants.ERROR);
 			tc4.setName("verifyMenuItem");
 			tc4.setNumber(01);
 			tc4.setSuite_id(01);
@@ -161,7 +161,6 @@ public class AmazonLogin {
 		session.save(r4);
 		session.save(tc4);
 		session.save(ts4);
-		// tx.commit();
 
 	}
 
@@ -170,8 +169,7 @@ public class AmazonLogin {
 		try {
 			page = Util.findPageTitle(driver);
 			log.info(LOGS.PASS);
-
-			r3.setStatus("PASS");
+			r3.setStatus(Constants.PASS);
 
 			tc3.setName("verifyPageTitle");
 			tc3.setNumber(01);
@@ -185,7 +183,7 @@ public class AmazonLogin {
 			return page;
 		} catch (Exception e) {
 			log.info(LOGS.ERROR);
-			r3.setStatus("ERROR");
+			r3.setStatus(Constants.ERROR);
 			tc3.setName("verifyPageTitle");
 			tc3.setNumber(01);
 			tc3.setSuite_id(01);
@@ -210,7 +208,7 @@ public class AmazonLogin {
 			Util.findElementbyIdAndSendKeys(driver, Constants.AMAZON_SEARCH, Constants.AMAZON_SEARCH_KEY);
 			Util.findElementbyClassAndClick(driver, Constants.AMAZON_SEARCH_BTN);
 			log.info(LOGS.PASS);
-			r2.setStatus("PASS");
+			r2.setStatus(Constants.PASS);
 
 			tc2.setName("SearchString");
 			tc2.setNumber(01);
@@ -225,7 +223,7 @@ public class AmazonLogin {
 
 			System.out.println("SearchString =>" + e);
 			log.info(LOGS.ERROR);
-			r2.setStatus("ERROR");
+			r2.setStatus(Constants.ERROR);
 			tc2.setName("SearchString");
 			tc2.setNumber(01);
 			tc2.setSuite_id(01);
@@ -239,7 +237,6 @@ public class AmazonLogin {
 		session.save(r2);
 		session.save(tc2);
 		session.save(ts2);
-		// tx.commit();
 
 	}
 
@@ -248,7 +245,7 @@ public class AmazonLogin {
 			driver = Util.getBrowser("HTML");
 			Util.getURL(driver, Constants.AMAZON_URL);
 			log.info(LOGS.PASS);
-			r.setStatus("PASS");
+			r.setStatus(Constants.PASS);
 
 			tc.setName("OpenBrowser");
 			tc.setNumber(01);
@@ -262,7 +259,7 @@ public class AmazonLogin {
 		} catch (Exception e) {
 			System.out.println("Unable open the Browser =>" + e);
 			log.info(LOGS.ERROR);
-			r.setStatus("FAIL");
+			r.setStatus(Constants.ERROR);
 			tc.setName("OpenBrowsere");
 			tc.setNumber(01);
 			tc.setSuite_id(01);
@@ -276,7 +273,6 @@ public class AmazonLogin {
 		session.save(r);
 		session.save(tc);
 		session.save(ts);
-		// tx.commit();
 
 	}
 

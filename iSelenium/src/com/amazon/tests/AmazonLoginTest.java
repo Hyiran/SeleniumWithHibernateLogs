@@ -48,7 +48,6 @@ public class AmazonLoginTest {
 		list1.add("Sell");
 		list1.add("Help");
 		AmazonLogin.verifyNavXShop(list1, list2, xpath_start, xpath_end);
-
 	}
 
 	@Test
