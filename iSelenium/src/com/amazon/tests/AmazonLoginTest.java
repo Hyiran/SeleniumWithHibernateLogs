@@ -27,23 +27,17 @@ public class AmazonLoginTest {
 
 	@Test
 	public void OpenBrowser() {
-
 		AmazonLogin.OpenBrowser();
-
 	}
 
 	@Test
 	public void SearchString() {
-
 		AmazonLogin.SearchString();
-
 	}
 
 	@Test
 	public void verifyMenuItem() {
-
 		AmazonLogin.verifyMenuItem();
-
 	}
 
 	@Test
@@ -53,18 +47,15 @@ public class AmazonLoginTest {
 		list1.add("Gift Cards");
 		list1.add("Sell");
 		list1.add("Help");
-
 		AmazonLogin.verifyNavXShop(list1, list2, xpath_start, xpath_end);
 
 	}
 
-	/**
-	 * @Test public void verifyPageTitle() { try {
-	 *       AmazonLogin.verifyPageTitle(); log.info(LOGS.PASS);
-	 *       r5.setStatus("PASS"); } catch (Exception e) { log.info(LOGS.ERROR);
-	 *       r5.setStatus("ERROR"); } session.persist(r5); tx.commit();
-	 *       session.close(); }
-	 */
+	@Test
+	public void verifyPageTitle() {
+		AmazonLogin.verifyPageTitle();
+	}
+
 	@Test
 	public void verifyShopByDept() {
 		AmazonLogin.verifyShopByDept();
