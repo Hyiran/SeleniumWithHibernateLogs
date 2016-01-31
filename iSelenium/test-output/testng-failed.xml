@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.amazon.tests.AmazonLoginTest">
+        <methods>
+          <include name="verifyShopByDept"/>
+          <include name="SearchString"/>
+          <include name="verifyMenuItem"/>
+          <include name="verifyNavXShop"/>
+        </methods>
+      </class> <!-- com.amazon.tests.AmazonLoginTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

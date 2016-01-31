@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="C:/Building/WebDriver/selenium-2.49.1/selenium-java-2.49.1.jar" sourcepath="C:/Building/WebDriver/selenium-2.49.1/selenium-java-2.49.1-srcs.jar"/>
+	<classpathentry kind="lib" path="C:/Building/WebDriver/selenium-2.49.1/selenium-server-standalone-2.49.1.jar"/>
+	<classpathentry kind="lib" path="C:/Building/WebDriver/log4j-1.2.17/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="C:/Building/WebDriver/hibernatejar/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="C:/Building/WebDriver/hibernatejar/asm.jar"/>
+	<classpathentry kind="lib" path="C:/Building/WebDriver/hibernatejar/asm-attrs.jar"/>
+	<classpathentry kind="lib" path="C:/Building/WebDriver/hibernatejar/c3p0-0.9.1.jar"/>
+	<classpathentry kind="lib" path="C:/Building/WebDriver/hibernatejar/cglib-2.1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Building/WebDriver/hibernatejar/commons-collections-2.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Building/WebDriver/hibernatejar/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Building/WebDriver/hibernatejar/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Building/WebDriver/hibernatejar/ehcache-1.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Building/WebDriver/hibernatejar/ejb3-persistence.jar"/>
+	<classpathentry kind="lib" path="C:/Building/WebDriver/hibernatejar/hibernate3.jar"/>
+	<classpathentry kind="lib" path="C:/Building/WebDriver/hibernatejar/hibernate-annotations.jar"/>
+	<classpathentry kind="lib" path="C:/Building/WebDriver/hibernatejar/hibernate-commons-annotations.jar"/>
+	<classpathentry kind="lib" path="C:/Building/WebDriver/hibernatejar/hibernate-validator.jar"/>
+	<classpathentry kind="lib" path="C:/Building/WebDriver/hibernatejar/jdbc2_0-stdext.jar"/>
+	<classpathentry kind="lib" path="C:/Building/WebDriver/hibernatejar/jta.jar"/>
+	<classpathentry kind="lib" path="C:/Building/WebDriver/hibernatejar/log4j-1.2.11.jar"/>
+	<classpathentry kind="lib" path="C:/Building/WebDriver/hibernatejar/xerces-2.6.2.jar"/>
+	<classpathentry kind="lib" path="C:/Building/WebDriver/hibernatejar/mysql-connector-java-5.1.38-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Building/WebDriver/hibernatejar/hibernate3.5.0-Final-src.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
